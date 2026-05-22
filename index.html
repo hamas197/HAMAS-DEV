@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAMASDev | Full-Stack Web Developer - Custom Websites & Apps</title>
+    <meta name="description" content="HAMASDev builds fully functional, custom-coded websites and web applications. Frontend, backend, database, e-commerce, admin dashboards, and API integration.">
+    <meta name="keywords" content="web developer, frontend developer, backend developer, custom websites, react, node.js, full-stack, portfolio, freelance web developer">
+    <meta name="author" content="HAMASDev">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hamasdev.dev/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hamasdev.dev/">
+    <meta property="og:title" content="HAMASDev | Full-Stack Web Developer - Custom Websites & Apps">
+    <meta property="og:description" content="Building fully functional websites with custom code. 50+ projects delivered. Frontend, backend, database, e-commerce, admin dashboards, and API integration.">
+    <meta property="og:image" content="https://hamasdev.dev/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="HAMASDev">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hamasdev">
+    <meta name="twitter:title" content="HAMASDev | Full-Stack Web Developer - Custom Websites & Apps">
+    <meta name="twitter:description" content="Building fully functional websites with custom code. 50+ projects delivered.">
+    <meta name="twitter:image" content="https://hamasdev.dev/assets/og-image.jpg">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "HAMASDev Web Development",
+        "description": "Full-stack web development services including custom frontend, backend, database architecture, e-commerce, admin dashboards, and API integration.",
+        "url": "https://hamasdev.dev",
+        "telephone": "+92-316-9639295",
+        "email": "shahhamas197@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Swat",
+            "addressRegion": "KPK",
+            "addressCountry": "PK"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "HAMAS",
+        "jobTitle": "Full-Stack Web Developer",
+        "url": "https://hamasdev.dev",
+        "sameAs": [
+            "https://github.com/hamasdev",
+            "https://linkedin.com/in/hamasdev"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "HAMASDev Web Development Portfolio",
+        "url": "https://hamasdev.dev",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://hamasdev.dev/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Page scroll progress"></div>
+    <!-- Fixed Navbar -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="HAMASDev Home">HAMAS<span>Dev</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="login.html" class="btn btn-primary nav-cta">Admin</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+        <div class="hero-shapes" aria-hidden="true">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <h1 class="hero-title">Hi, I'm <span class="highlight typed-text" id="typedText">HAMAS</span><span class="typed-cursor" id="typedCursor">|</span><br><span class="hero-title-sub">Full-Stack Web Developer</span></h1>
+                <p class="hero-subtitle">I craft complete web solutions from frontend to database. No page builders. No templates. Just clean, performant code — built with <span class="highlight">custom code</span> for your business.</p>
+                <div class="hero-cta">
+                    <a href="#portfolio" class="btn btn-primary btn-lg">View My Work</a>
+                    <a href="#contact" class="btn btn-outline btn-lg">Get a Quote</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Custom Code</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24</span><span class="stat-plus">h</span>
+                        <span class="stat-label">Response Time</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual fade-in">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-title">project.js</span>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-func">buildProject</span> = <span class="code-paren">(</span>requirements<span class="code-paren">)</span> <span class="code-keyword">=></span> <span class="code-paren">{</span>
+    <span class="code-keyword">const</span> design = <span class="code-keyword">await</span> <span class="code-func">createUI</span><span class="code-paren">(</span>requirements<span class="code-paren">)</span>;
+    <span class="code-keyword">const</span> backend = <span class="code-keyword">await</span> <span class="code-func">buildAPI</span><span class="code-paren">(</span>design<span class="code-paren">)</span>;
+    <span class="code-keyword">const</span> database = <span class="code-keyword">await</span> <span class="code-func">setupDB</span><span class="code-paren">(</span>backend<span class="code-paren">)</span>;
+    <span class="code-keyword">return</span> <span class="code-func">deploy</span><span class="code-paren">(</span>database<span class="code-paren">)</span>;
+<span class="code-paren">}</span>;
+
+<span class="code-func">buildProject</span><span class="code-paren">(</span>yourIdea<span class="code-paren">)</span>
+    .<span class="code-func">then</span><span class="code-paren">(</span>success <span class="code-keyword">=></span> console.<span class="code-func">log</span><span class="code-paren">(</span><span class="code-string">"🚀 Website Launched!"</span><span class="code-paren">)</span><span class="code-paren">)</span>
+    .<span class="code-func">catch</span><span class="code-paren">(</span>error <span class="code-keyword">=></span> console.<span class="code-func">error</span><span class="code-paren">(</span><span class="code-string">"Contact HAMAS!"</span><span class="code-paren">)</span><span class="code-paren">)</span>;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>My <span class="highlight">Services</span></h2>
+                <p>End-to-end web development solutions tailored to your goals</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in" data-tilt>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3>Custom Frontend</h3>
+                    <p>Pixel-perfect, responsive UIs built with HTML5, CSS3, and JavaScript. Smooth animations, accessibility, and cross-browser compatibility.</p>
+                </div>
+                <div class="service-card fade-in" data-tilt>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Scalable server-side logic with Node.js, Python, or PHP. RESTful APIs, authentication, and server management.</p>
+                </div>
+                <div class="service-card fade-in" data-tilt>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    </div>
+                    <h3>Database Architecture</h3>
+                    <p>Efficient data modeling with MongoDB, MySQL, PostgreSQL. Query optimization, indexing, and data migration.</p>
+                </div>
+                <div class="service-card fade-in" data-tilt>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    </div>
+                    <h3>E-commerce</h3>
+                    <p>Full online stores with product management, cart, checkout, payment gateway integration, and inventory tracking.</p>
+                </div>
+                <div class="service-card fade-in" data-tilt>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                    </div>
+                    <h3>Admin Dashboards</h3>
+                    <p>Feature-rich admin panels with analytics, data tables, charts, user management, and role-based access control.</p>
+                </div>
+                <div class="service-card fade-in" data-tilt>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                    </div>
+                    <h3>API Integration</h3>
+                    <p>Seamless third-party API integration, custom API development, webhooks, and real-time data synchronization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Tech <span class="highlight">Stack</span></h2>
+                <p>Technologies I work with daily</p>
+            </div>
+            <div class="tech-grid fade-in">
+                <div class="tech-item" data-tooltip="HTML5">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" loading="lazy">
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-item" data-tooltip="CSS3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" loading="lazy">
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-item" data-tooltip="JavaScript">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item" data-tooltip="React">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy">
+                    <span>React</span>
+                </div>
+                <div class="tech-item" data-tooltip="Node.js">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" loading="lazy">
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-item" data-tooltip="Python">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy">
+                    <span>Python</span>
+                </div>
+                <div class="tech-item" data-tooltip="PHP">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" loading="lazy">
+                    <span>PHP</span>
+                </div>
+                <div class="tech-item" data-tooltip="MongoDB">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" loading="lazy">
+                    <span>MongoDB</span>
+                </div>
+                <div class="tech-item" data-tooltip="MySQL">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" loading="lazy">
+                    <span>MySQL</span>
+                </div>
+                <div class="tech-item" data-tooltip="PostgreSQL">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" loading="lazy">
+                    <span>PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>My <span class="highlight">Portfolio</span></h2>
+                <p>Recent projects I've built from scratch</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card fade-in" data-tilt>
+                    <div class="portfolio-image">
+                        <img src="https://placehold.co/600x400/2563eb/ffffff?text=E-Commerce" alt="E-commerce Platform" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-featured online store with product management, cart, secure checkout, and admin dashboard.</p>
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-primary">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-card fade-in" data-tilt>
+                    <div class="portfolio-image">
+                        <img src="https://placehold.co/600x400/0f172a/ffffff?text=Business+Site" alt="Business Website" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Business Website</h3>
+                        <p>Professional corporate website with CMS, blog, SEO optimization, and contact management.</p>
+                        <div class="portfolio-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>PHP</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-primary">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-card fade-in" data-tilt>
+                    <div class="portfolio-image">
+                        <img src="https://placehold.co/600x400/06b6d4/ffffff?text=SaaS+Dash" alt="SaaS Dashboard" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>SaaS Dashboard</h3>
+                        <p>Interactive analytics dashboard with real-time data, charts, user management, and role-based access.</p>
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Simple <span class="highlight">Pricing</span></h2>
+                <p>Transparent pricing for every project size</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in" data-tilt>
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <p class="price"><span class="currency">$</span>50</p>
+                        <p class="price-sub">Per project</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Single page website</li>
+                        <li>Responsive design</li>
+                        <li>Contact form</li>
+                        <li>5 days delivery</li>
+                        <li>2 revision rounds</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline pricing-btn">Get Started</a>
+                </div>
+                <div class="pricing-card pricing-featured fade-in" data-tilt>
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Standard</h3>
+                        <p class="price"><span class="currency">$</span>100</p>
+                        <p class="price-sub">Per project</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Multi-page website</li>
+                        <li>Responsive design</li>
+                        <li>Contact form + CMS</li>
+                        <li>10 days delivery</li>
+                        <li>3 revision rounds</li>
+                        <li>SEO optimization</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary pricing-btn">Get Started</a>
+                </div>
+                <div class="pricing-card fade-in" data-tilt>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <p class="price"><span class="currency">$</span>200</p>
+                        <p class="price-sub">Per project</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Full-stack web application</li>
+                        <li>Database integration</li>
+                        <li>Admin dashboard</li>
+                        <li>API development</li>
+                        <li>14 days delivery</li>
+                        <li>4 revision rounds</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline pricing-btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Get In <span class="highlight">Touch</span></h2>
+                <p>Have a project in mind? Let's build something great together</p>
+            </div>
+            <div class="contact-wrapper fade-in">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Swat, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <div>
+                            <h4>Email</h4>
+                            <p>shahhamas197@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="https://wa.me/923169639295" target="_blank" rel="noopener" style="color:var(--gray-500);text-decoration:underline;text-underline-offset:3px;">+92 316 9639295</a> <span style="font-size:0.75rem;color:var(--success);font-weight:600;">WhatsApp</span></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <div>
+                            <h4>Availability</h4>
+                            <p>Mon-Fri, 9AM-6PM PST</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required minlength="2" autocomplete="name">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (234) 567-890" autocomplete="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service <span class="required">*</span></label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="frontend">Custom Frontend</option>
+                                <option value="backend">Backend Development</option>
+                                <option value="database">Database Architecture</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="admin">Admin Dashboard</option>
+                                <option value="api">API Integration</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="serviceError"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select a range (optional)</option>
+                            <option value="50-100">$50 - $100</option>
+                            <option value="100-200">$100 - $200</option>
+                            <option value="200-500">$200 - $500</option>
+                            <option value="500+">$500+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." required minlength="10" rows="5"></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-submit">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loader" style="display:none;">
+                            <svg class="spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg>
+                        </span>
+                    </button>
+                    <div class="form-success" id="formSuccess" style="display:none;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <p>Thank you! Your message has been sent successfully. I'll get back to you within 24 hours.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="logo">HAMAS<span>Dev</span></a>
+                    <p>Building fully functional websites with custom code. Let's bring your vision to life.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Custom Frontend</a></li>
+                        <li><a href="#services">Backend Development</a></li>
+                        <li><a href="#services">Database Architecture</a></li>
+                        <li><a href="#services">E-commerce</a></li>
+                        <li><a href="#services">Admin Dashboards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#home">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="login.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">GDPR Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HAMASDev. All rights reserved. Built with <span class="heart">&hearts;</span> and custom code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toastContainer" role="alert" aria-live="polite"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - HAMASDev Portfolio</title>
+    <meta name="description" content="Admin login page for HAMASDev portfolio dashboard. Authorized access only.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://hamzadev.dev/login.html">
+
+    <meta property="og:title" content="Admin Login - HAMASDev Portfolio">
+    <meta property="og:description" content="Admin login page for HAMASDev portfolio dashboard.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hamzadev.dev/login.html">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Admin Login - HAMASDev Portfolio">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-card fade-in">
+            <div class="login-header">
+                <a href="index.html" class="logo">HAMAS<span>Dev</span></a>
+                <p class="login-subtitle">Admin Dashboard</p>
+            </div>
+            <form class="login-form" id="loginForm" novalidate>
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" placeholder="shahhamas197@gmail.com" required autocomplete="email">
+                    <span class="error-message" id="loginEmailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required minlength="6" autocomplete="current-password">
+                    <span class="error-message" id="loginPasswordError"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-login">
+                    <span class="btn-text">Sign In</span>
+                    <span class="btn-loader" style="display:none;">
+                        <svg class="spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg>
+                    </span>
+                </button>
+                <p class="login-error" id="loginError" style="display:none;"></p>
+            </form>
+            <div class="login-demo">
+                <p class="demo-label">Demo Credentials</p>
+                <div class="demo-cred">
+                    <span class="demo-key">Email:</span>
+                    <span class="demo-value">shahhamas197@gmail.com</span>
+                </div>
+                <div class="demo-cred">
+                    <span class="demo-key">Password:</span>
+                    <span class="demo-value">admin123</span>
+                </div>
+            </div>
+            <p class="login-back">
+                <a href="index.html">&larr; Back to Home</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
