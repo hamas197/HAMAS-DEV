@@ -9,7 +9,7 @@ Disallow: /login.html
 Allow: /
 
 # Sitemap location
-Sitemap: https://hamasdev.dev/sitemap.xml
+Sitemap: https://hamasdevzone.com/sitemap.xml
 
 # Crawl delay for polite crawling
 Crawl-delay: 10
