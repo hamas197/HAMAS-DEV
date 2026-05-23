@@ -481,33 +481,43 @@ const ContactForm = {
         btnLoader.style.display = 'inline-flex';
         submitBtn.disabled = true;
 
-        setTimeout(() => {
-            const formData = {
-                id: Utils.generateId(),
-                name: Utils.sanitize(document.getElementById('name').value.trim()),
-                email: Utils.sanitize(document.getElementById('email').value.trim()),
-                phone: Utils.sanitize(document.getElementById('phone').value.trim()),
-                service: document.getElementById('service').value,
-                budget: document.getElementById('budget').value,
-                message: Utils.sanitize(document.getElementById('message').value.trim()),
-                date: new Date().toISOString(),
-                read: false
-            };
+        const formData = {
+            name: Utils.sanitize(document.getElementById('name').value.trim()),
+            email: Utils.sanitize(document.getElementById('email').value.trim()),
+            phone: Utils.sanitize(document.getElementById('phone').value.trim()),
+            service: document.getElementById('service').value,
+            budget: document.getElementById('budget').value,
+            message: Utils.sanitize(document.getElementById('message').value.trim()),
+        };
 
-            const messages = JSON.parse(localStorage.getItem('hamzaMessages') || '[]');
-            messages.unshift(formData);
-            localStorage.setItem('hamzaMessages', JSON.stringify(messages));
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData),
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    const messages = JSON.parse(localStorage.getItem('hamzaMessages') || '[]');
+                    messages.unshift({ ...formData, id: Utils.generateId(), date: new Date().toISOString(), read: false });
+                    localStorage.setItem('hamzaMessages', JSON.stringify(messages));
 
-            btnText.style.display = 'inline';
-            btnLoader.style.display = 'none';
-            submitBtn.disabled = false;
-
-            this.form.reset();
-            this.form.style.display = 'none';
-            formSuccess.style.display = 'block';
-
-            Utils.showNotification('Message sent successfully! I\'ll get back to you within 24 hours.', 'success');
-        }, 1500);
+                    this.form.reset();
+                    this.form.style.display = 'none';
+                    formSuccess.style.display = 'block';
+                    Utils.showNotification('Message sent successfully! I\'ll get back to you within 24 hours.', 'success');
+                } else {
+                    Utils.showNotification(data.error || 'Failed to send message. Please try again.', 'error');
+                }
+            })
+            .catch(() => {
+                Utils.showNotification('Network error. Please try again later.', 'error');
+            })
+            .finally(() => {
+                btnText.style.display = 'inline';
+                btnLoader.style.display = 'none';
+                submitBtn.disabled = false;
+            });
     }
 };
 
