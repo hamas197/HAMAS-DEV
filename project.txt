@@ -15,7 +15,7 @@ Sections in order:
 1. Fixed navbar: Logo “HamzaDev”, links (Home, Services, Portfolio, Pricing, Contact), Admin CTA
 button
 2. Hero: Headline “Building Fully Functional Websites with Custom Code”, animated code window,
-stats (50+ Projects, 100% Custom Code, 24h Response)
+stats (4+ Projects, 100% Custom Code, 24h Response)
 3. Services: 6 cards (Custom Frontend, Backend Development, Database Architecture, E-commerce,
 Admin Dashboards, API Integration)
 4. Tech Stack: Dark background, 10 items (HTML5, CSS3, JavaScript, React, Node.js, Python, PHP,
